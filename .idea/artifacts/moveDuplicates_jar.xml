@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="moveDuplicates:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/moveDuplicates_jar</output-path>
+    <root id="archive" name="moveDuplicates.jar">
+      <element id="module-output" name="moveDuplicates" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.15/commons-codec-1.15.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
