@@ -14,11 +14,11 @@ public class FindDuplicateImages {
 
     public static void main(String[] args) throws Exception {
         // Directory containing the images
-        String imagesDirPath = "C:\\Users\\steff\\OneDrive\\Billeder";
+        String imagesDirPath = "C:\\Users\\boots\\Desktop\\test2";
         File dir = new File(imagesDirPath);
 
         // Directory where duplicates will be moved
-        String duplicatesDirPath = "C:\\Users\\steff\\OneDrive\\Billeder\\Kopier";
+        String duplicatesDirPath = "C:\\Users\\boots\\Desktop\\test2\\Duplicates";
         File duplicatesDir = new File(duplicatesDirPath);
         if (!duplicatesDir.exists()) {
             duplicatesDir.mkdirs();
@@ -40,7 +40,7 @@ public class FindDuplicateImages {
 
             String fileName = file.getName().toLowerCase();
             System.out.println(fileDigest);
-            if ((fileName.endsWith(".jpg") || fileName.endsWith(".png") || fileName.endsWith(".jpeg") || fileName.endsWith(".CR2"))) {
+            if ((fileName.endsWith(".jpg") || fileName.endsWith(".png") || fileName.endsWith(".jpeg") || fileName.endsWith(".cr2"))) {
                 if (imagesMap.containsKey(fileDigest)) {
                     // It's a duplicate
                     System.out.println("Moving file: " + file.getName());
