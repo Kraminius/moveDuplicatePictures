@@ -14,11 +14,11 @@ public class FindDuplicateImages {
 
     public static void main(String[] args) throws Exception {
         // Directory containing the images
-        String imagesDirPath = "C:\\Users\\boots\\Desktop\\test2";
+        String imagesDirPath = "C:\\Users\\steff\\OneDrive\\Billeder";
         File dir = new File(imagesDirPath);
 
         // Directory where duplicates will be moved
-        String duplicatesDirPath = "C:\\Users\\boots\\Desktop\\test2\\Duplicates";
+        String duplicatesDirPath = "C:\\Users\\steff\\OneDrive\\Skrivebord\\Kopier";
         File duplicatesDir = new File(duplicatesDirPath);
         if (!duplicatesDir.exists()) {
             duplicatesDir.mkdirs();
