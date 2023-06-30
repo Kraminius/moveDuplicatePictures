@@ -13,12 +13,18 @@ import java.util.*;
 public class FindDuplicateImages {
 
     public static void main(String[] args) throws Exception {
+
+        // Validate that an argument was provided
+        if (args.length < 1) {
+            System.err.println("Usage: java -jar copies.jar <directory>");
+            System.exit(1);
+        }
         // Directory containing the images
-        String imagesDirPath = "C:\\Users\\steff\\OneDrive\\Billeder";
+        String imagesDirPath = args[0];
         File dir = new File(imagesDirPath);
 
         // Directory where duplicates will be moved
-        String duplicatesDirPath = "C:\\Users\\steff\\OneDrive\\Skrivebord\\Kopier";
+        String duplicatesDirPath = imagesDirPath + File.separator + "Kopier";
         File duplicatesDir = new File(duplicatesDirPath);
         if (!duplicatesDir.exists()) {
             duplicatesDir.mkdirs();
